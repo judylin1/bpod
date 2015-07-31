@@ -61,38 +61,15 @@ $white-off: #DFDBD9;
   }
 
   a{
-    padding: 1.1em 0;
     color: $white-off;
     font: 400 1.125em $sans;
+    border-bottom: solid 1px $gray-shine;
     text:{
       align: center;
-      transform: lowercase;
     }
 
     &:hover{
       color: #fff;
-    }
-  }
-}
-
-// SOCIAL LINKS
-.social-links{
-  border-bottom: solid 1px $gray-shine;
-
-  li{
-    width: 100%;
-    border-left: solid 1px $gray-shine;
-    &:first-child{ border: none; }
-  }
-
-  a{
-    display: block;
-    height: 5.5em;
-    text-align: center;
-    color: $gray-shine;
-    font: 0.75em/5.5em $sans;
-    &:hover{
-      color: $white-off;
     }
   }
 }
