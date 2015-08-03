@@ -1,0 +1,61 @@
+extends ../layout
+
+block content
+  script(src='https://code.jquery.com/jquery-1.9.1.min.js')
+  script(src='https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js')
+  script(src='/javascripts/typeahead.js' type='text/javascript')
+  include ../partials/nav
+  
+  h1 Login / Sign-up
+  
+  //- if errors
+  //-   div.red
+  //-     for error in errors
+  //-       p= error
+  
+  form(method='post' action='/login')
+    label(for='ownername') Owner Name
+    input(type='text' id='ownername' name='name')
+    p
+    label(for='dogname') Dog's Name
+    input(type='text' id='dogname' name='dogname')
+    p
+    label(for='breed') Breed
+    input(type='text' id='breed' class='typeahead' name='breed')
+    p
+    label(for='dogage') Dog's Age
+    input(type='number' id='dogage' name='dogage')
+    p
+    label(for='dogenergy') Dog's Energy Level
+    select(name='dogenergy')
+      option(value='select' disabled selected) Select One
+      option(value='Low') Low
+      option(value='Moderate') Moderate
+      option(value='High') High
+    p
+    label(for='dogwt') Dog's Weight (in lbs)
+    input(type='number' id='dogwt' name='dogwt')
+    p
+    label(for='dogneuter') Dog Neutered/Spayed 
+    select(name='dogneuter')
+      option(value="Yes") Yes
+      option(value='No') No
+    p
+    label(for='doghobbies') Dog's Hobbies
+    div.hobbies
+      div.row
+        div.two.columns
+          input(type='checkbox') 
+          |  Running
+        div.two.columns
+          input(type='checkbox') 
+          |  Swimming
+      div.row
+        div.two.columns
+          input(type='checkbox') 
+          |  Fetching
+        div.two.columns
+          input(type='checkbox') 
+          |  Hunting
+    p
+    input(type='submit' value="Sign-Up")

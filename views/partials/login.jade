@@ -1,0 +1,21 @@
+script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+script(src='/javascripts/login.js')
+//- include ../partials/nav
+//- h1 Sign In
+//- 
+//- a(href='/login/facebook')
+//-   img(src='/images/fblogin.png' width='200')
+//- 
+//- a(href='/login/twitter')
+//-   img(src='/images/twitterlogin.png' width='200')
+
+a.cd-popup-trigger Login
+  .cd-popup(role='alert')
+    .cd-popup-container
+      p Login via:
+      a(href='/login/facebook')
+        img(src='/images/fblogin.png')
+      br
+      a(href='/login/twitter')
+        img(src='/images/twitterlogin.png')
+      a.cd-popup-close.img-replace Close

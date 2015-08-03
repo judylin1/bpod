@@ -1,18 +1,31 @@
+script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+script(src='/javascripts/login.js')
+
 header.header(role='banner')
   h1.logo
-    a(href='/')
+    a.nav(href='/')
       | Big Paws of 
       span Denver
     .nav-wrap
       nav.main-nav(role='navigation')
         ul.unstyled.list-hover-slide
-          li
-            a(href='/parks') Parks
-            |  
-            a(href='/about') About
-            |  
-            a(href='/contact') Contact
-            |  
-            a(href='/login') Login
+          a.nav(href='/parks') Parks
+          a.nav(href='/about') About
+          a.nav(href='/contact') Contact
+        ul.social-links.list-inline.unstyled.list-hover-slide
+          li.nav2 
+            a.nav.cd-popup-trigger Login
+              a.cd-popup-trigger
+                .cd-popup(role='alert')
+                  .cd-popup-container
+                    p Login via:
+                    a(href='/login/facebook')
+                      img(src='/images/fblogin.png')
+                    br
+                    a(href='/login/twitter')
+                      img(src='/images/twitterlogin.png')
+                    //- a.cd-popup-close.img-replace Close
+          li.nav2
+            a.nav(href='/signup') Sign-Up
       a(href='www.facebook.com/bigpawsofdenver' target='_blank')
         img(src='../../images/fb.png' height='50' width='50')
