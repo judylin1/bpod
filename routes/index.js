@@ -33,7 +33,7 @@ router.get('/login/facebook',
 router.get('/login/facebook/callback',
   passport.authenticate('facebook', {
     failureRedirect : '/',
-    successRedirect : '/about'
+    successRedirect : 'bpod/about'
   })
 );
 
