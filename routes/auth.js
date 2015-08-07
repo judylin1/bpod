@@ -12,7 +12,7 @@ router.get('/logout', function (req, res, next) {
 router.get('/auth/facebook/callback',
   passport.authenticate('facebook', {
     failureRedirect: '/',
-    successRedirect: 'bpod/profile'
+    successRedirect: 'bpod/about'
   }));
 
 module.exports = router;
