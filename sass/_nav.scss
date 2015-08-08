@@ -9,11 +9,19 @@ $gray-shine: #3C3735;
 $white-off: #DFDBD9;
 
 // REUSABLE STYLES
-.unstyled{ list-style: none; padding: 0; margin: 0;
-  a.nav{ text-decoration: none; }
+.unstyled{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  a.nav{
+    text-decoration: none;
+  }
 }
-.list-inline{ overflow: hidden;
-  li.nav2{ float: left; }
+.list-inline{
+  overflow: hidden;
+  li.nav2{
+    float: left;
+  }
 }
 
 // HEADER STYLES
@@ -79,12 +87,15 @@ $white-off: #DFDBD9;
 
   li.nav2{
     border-top: none;
-    width: 50%;
+    border-bottom: none;
+    width: 100%;
     border-left: solid 1px $gray-shine;
   }
 
   a.nav{
     display: block;
+    width: 100%;
+    border-top: none;
     height: 5em;
     text-align: center;
     color: $white-off;

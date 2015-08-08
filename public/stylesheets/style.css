@@ -882,11 +882,14 @@ th {
 
 .social-links li.nav2 {
   border-top: none;
-  width: 50%;
+  border-bottom: none;
+  width: 100%;
   border-left: solid 1px #3C3735; }
 
 .social-links a.nav {
   display: block;
+  width: 100%;
+  border-top: none;
   height: 5em;
   text-align: center;
   color: #DFDBD9;

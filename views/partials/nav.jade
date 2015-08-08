@@ -18,13 +18,11 @@ header.header(role='banner')
               a.cd-popup-trigger
                 .cd-popup(role='alert')
                   .cd-popup-container
-                    p Login via:
-                    a(href='/login/facebook')
-                      img(src='/images/fblogin.png')
-                    br
-                    a(href='/login/twitter')
-                      img(src='/images/twitterlogin.png')
-                    //- a.cd-popup-close.img-replace Close
+                    form(action='post' method='login')
+                      label(for='email') Email
+                      input(type='email' name='email' value=email)
+                      label(for='password') Password
+                      input(type='text' name='password')
           li.nav2
             a.nav(href='/signup') Sign-Up
       a(href='www.facebook.com/bigpawsofdenver' target='_blank')

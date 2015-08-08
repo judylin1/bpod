@@ -1,0 +1,11 @@
+extends ../layout
+
+block content
+  include ../partials/nav
+  h1 Login
+  
+  form(action='post' method='login')
+    label(for='email') Email
+    input(type='email' name='email' value=email)
+    label(for='password') Password
+    input(type='text' name='password')
